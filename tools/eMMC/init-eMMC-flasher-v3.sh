@@ -36,6 +36,7 @@ mkfs_options=""
 #mkfs_options="-cc"
 
 device_eeprom="bbb-eeprom"
+#device_eeprom="bbgw-eeprom"
 
 check_if_run_as_root
 
@@ -43,7 +44,7 @@ startup_message
 prepare_environment
 
 countdown 5
-check_eeprom
+#check_eeprom
 check_running_system
 activate_cylon_leds
 prepare_drive
