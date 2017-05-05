@@ -13,7 +13,8 @@ emmcscript="cmdline=init=/opt/scripts/tools/eMMC/$(basename $0)"
 http_spl="MLO-am335x_evm-v2017.05-rc2-r4"
 http_uboot="u-boot-am335x_evm-v2017.05-rc2-r4.img"
 
-set -o errtrace
+#set -o errtrace
+set -o xtrace
 
 trap _exit_trap EXIT
 trap _err_trap ERR
